@@ -1,0 +1,48 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-gap:10px;
+    text-align: center;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    padding: 0px;
+    margin: 0px;
+    
+}
+.container div{
+    grid-gap: 10px;
+    background-color:lightblue;
+}
+.header{
+    grid-column: 1/ span 12;
+    background-color: bisque;
+    
+}
+#headerlogo{
+    text-align: start;
+    padding-left: 10px;
+    font-family: Georgia;
+    font-weight: bolder;
+    color:rgb(255, 0, 132);
+}
+.sidebar{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 10;
+    background-color: chartreuse;
+}
+.nav{
+    grid-column: 4 /span 6;
+    grid-row: 2/ span 1;
+}
+.main{
+    grid-column:4/ span 6 ;
+    grid-row:3/span 9;
+}
+.ads{
+    grid-row:2/ span 10;
+    grid-column: 10/span 3;
+}
+.footer{
+    grid-column: 1/span 12;
+    
+}
